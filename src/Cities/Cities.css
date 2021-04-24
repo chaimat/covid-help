@@ -1,0 +1,89 @@
+.card-custom-container{
+    display: inline-block;
+}
+
+.card-custom{
+    margin: 0.4rem auto;
+    max-width: 21rem;
+    /* height: 17rem; */
+    transition: 0.3s;
+    border: none;
+    border-radius: 0.5%;
+    box-shadow: 0 0 2px #7F7F7F
+}
+
+.card-on-hover-custom{
+    box-shadow: 0 0 20px #96CDCD		;
+    transform: scale(1.07);
+    z-index: 2
+}
+
+@media(min-width : 768px){
+    .card-custom{
+        /* max-width : 19rem; */
+    }
+}
+
+.card-body-custom{
+    border: none;
+    padding: 5px;
+    background: linear-gradient(0deg, rgba(63, 63, 63, 0.8) 50%, rgba(61,61,61, 0.5) 50%);
+    color: white;
+    /* display: flex; 
+    flex-direction: column;
+    justify-content: flex-end; */
+    display: grid;
+    grid-template-areas: "lockIcon"
+    "title";
+    /* justify-content: bottom; */
+}
+
+.card-title-custom{
+    font-size: 1.5rem;
+    margin-top: 3px;
+    order: 2;
+    align-self: end;
+}
+
+.lock-icon-video-c{
+    grid-area: lockIcon;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
+}
+
+.card-title-custom i{
+    margin: auto 6px auto 3px;
+    transition: 0.3s;
+    font-weight: 300;
+    grid-area: title;
+}
+
+.card-title-custom i:hover{
+    transform: scale(1.07);
+}
+
+.video-list-container{
+    /* padding: 3rem 4rem; */
+    margin: 0 auto;
+    /* position: relative */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    padding: 2rem 2rem 230px;
+    /* width: 100%; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 5rem */
+}
+
+.heading-custom{
+    position: relative;
+    right: 1.4rem;
+}
+
+@media(min-width : 768px){
+    .video-list-container{
+        padding: 0 6rem 230px;
+    }
+}
